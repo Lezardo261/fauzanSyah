@@ -1,0 +1,81 @@
+ /* Reset default margin and padding */
+ body, html {
+  margin: 0;
+  padding: 0;
+}
+
+/* Global styles */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f1f1f1;
+}
+
+/* Header styles */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 1rem;
+  margin-left: 190px;
+  text-align: center;
+}
+
+/* Sidebar styles */
+.sidebar {
+  background-color: #222;
+  color: #fff;
+  width: 200px;
+  padding: 1rem;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.sidebar h2 {
+  margin-top: 0;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #444;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  margin-bottom: 1rem;
+}
+
+.sidebar a {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  padding: 0.5rem;
+}
+
+.sidebar a:hover {
+  background-color: #444;
+}
+
+/* Main content styles */
+.main-content {
+  margin-left: 250px;
+  padding: 1rem;
+}
+
+.main-content h1 {
+  margin-top: 0;
+}
+
+/* Media Queries for responsiveness */
+@media screen and (max-width: 768px) {
+  .sidebar {
+      width: 100%;
+      position: static;
+  }
+
+  .main-content {
+      margin: 0;
+  }
+}
